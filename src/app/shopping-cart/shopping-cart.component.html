@@ -1,0 +1,13 @@
+<div class="container">
+    <form class="container__form" [formGroup]="checkoutForm">
+        <h3>Shipping Address</h3>
+        <app-shipping-address class="container__form-shipping"></app-shipping-address>
+        <ng-container formGroupName="personalInfo">
+            <h3>Personal Info</h3>
+            <app-personal-info class="container__form-personal"></app-personal-info>
+        </ng-container>
+        <button nxButton="cta">
+            Place Order
+        </button>
+    </form>
+</div>

@@ -28,9 +28,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/@aposin/ng-aquila/css/normalize.css",
+              "node_modules/@aposin/ng-aquila/themes/expert.css",
+              "node_modules/css.gg/icons/all.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/what-input/dist/what-input.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -123,6 +128,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "reusable-forms"
 }
