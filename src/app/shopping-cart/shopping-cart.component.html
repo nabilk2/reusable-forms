@@ -2,6 +2,18 @@
     <form class="container__form" [formGroup]="checkoutForm">
         <h3>Shipping Address</h3>
         <app-shipping-address class="container__form-shipping"></app-shipping-address>
+
+        <ng-container *ngIf="!checkoutForm.get('useShippingAddress').value">
+            <ng-container formGroupName="billingAddress">
+                <h3>Billing Address</h3>
+                <app-shipping-address></app-shipping-address>
+            </ng-container>
+        </ng-container>
+
+        <nx-checkbox formControlName="useShippingAddress" (checkedChange)="addBillingAddress($event)">
+            Billing Address same as Shipping
+        </nx-checkbox>
+
         <ng-container formGroupName="personalInfo">
             <h3>Personal Info</h3>
             <app-personal-info class="container__form-personal"></app-personal-info>

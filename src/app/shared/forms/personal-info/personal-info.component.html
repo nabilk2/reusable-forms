@@ -8,5 +8,11 @@
     <nx-formfield nxLabel="Email">
         <input type="email" nxInput formControlName="email" />
     </nx-formfield>
+
+    <!-- <ng-container *ngFor="let control of controlContainer.control.controls | keyvalue">
+        <nx-formfield [nxLabel]="control.key | titlecase">
+            <input type="text" nxInput [formControlName]="control.key" />
+        </nx-formfield>
+    </ng-container> -->
 </ng-container>
   

@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { NxButtonModule } from '@aposin/ng-aquila/button';
 import { NxExpertModule } from '@aposin/ng-aquila/config';
 import { NxFormfieldModule } from '@aposin/ng-aquila/formfield';
@@ -7,6 +6,9 @@ import { NxHeadlineModule } from '@aposin/ng-aquila/headline';
 import { NxInputModule } from '@aposin/ng-aquila/input';
 import { NxToolbarModule } from '@aposin/ng-aquila/toolbar';
 import { NxLinkModule } from '@aposin/ng-aquila/link';
+import { NxCheckboxModule } from '@aposin/ng-aquila/checkbox';
+
+
 
 @NgModule({
   exports: [
@@ -16,7 +18,8 @@ import { NxLinkModule } from '@aposin/ng-aquila/link';
     NxInputModule,
     NxFormfieldModule,
     NxHeadlineModule,
-    NxLinkModule
+    NxLinkModule,
+    NxCheckboxModule
   ]
 })
 export class NxModule { }

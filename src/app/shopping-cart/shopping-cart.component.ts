@@ -7,7 +7,7 @@ import { ControlContainer, FormBuilder, FormGroup, Validators } from '@angular/f
   styleUrls: ['./shopping-cart.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ShoppingCartComponent implements OnInit {
+export class ShoppingCartComponent {
   checkoutForm: FormGroup;
 
   constructor(private _fb: FormBuilder) { 
@@ -15,15 +15,24 @@ export class ShoppingCartComponent implements OnInit {
       address: ['2440 Winston Park Drive', Validators.required],
       city: ['Oakville', Validators.required],
       postalCode: ['L6H 7V2', Validators.required],
+      useShippingAddress: true,
       personalInfo: this._fb.group({
         firstName: '',
         lastName: '',
         email: ['', Validators.email]
       })
-    })
+    });
   }
 
-  ngOnInit(): void {
-  }
+  addBillingAddress(useShippingAddress: boolean) {
+    !useShippingAddress ?
+      this.checkoutForm.addControl('billingAddress', this._fb.group({
+        address: '',
+        city: '',
+        postalCode: ''
+      }))
+      :
+      this.checkoutForm.removeControl('billingAddress');
 
+  }
 }

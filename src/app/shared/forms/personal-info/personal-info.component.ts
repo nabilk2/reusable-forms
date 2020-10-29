@@ -10,6 +10,7 @@ import { ControlContainer, FormGroup } from '@angular/forms';
 })
 export class PersonalInfoComponent {
   
-  constructor(public controlContainer: ControlContainer) { }
+  constructor(public controlContainer: ControlContainer) { 
+  }
 
 }
