@@ -8,10 +8,8 @@ import { ControlContainer, FormGroup } from '@angular/forms';
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None
 })
-export class PersonalInfoComponent implements OnInit {
+export class PersonalInfoComponent {
+  
   constructor(public controlContainer: ControlContainer) { }
-
-  ngOnInit(): void {
-  }
 
 }

@@ -8,11 +8,8 @@ import { ControlContainer } from '@angular/forms';
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None
 })
-export class ShippingAddressComponent implements OnInit {
+export class ShippingAddressComponent {
 
   constructor(public controlContainer: ControlContainer) { }
-
-  ngOnInit(): void {
-  }
 
 }
