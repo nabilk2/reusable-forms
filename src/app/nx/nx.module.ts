@@ -6,27 +6,17 @@ import { NxFormfieldModule } from '@aposin/ng-aquila/formfield';
 import { NxHeadlineModule } from '@aposin/ng-aquila/headline';
 import { NxInputModule } from '@aposin/ng-aquila/input';
 import { NxToolbarModule } from '@aposin/ng-aquila/toolbar';
-
-
+import { NxLinkModule } from '@aposin/ng-aquila/link';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    NxExpertModule,
-    NxToolbarModule,
-    NxButtonModule,
-    NxInputModule,
-    NxFormfieldModule,
-    NxHeadlineModule
-  ],
   exports: [
     NxExpertModule,
     NxToolbarModule,
     NxButtonModule,
     NxInputModule,
     NxFormfieldModule,
-    NxHeadlineModule
+    NxHeadlineModule,
+    NxLinkModule
   ]
 })
 export class NxModule { }

@@ -21,7 +21,6 @@
     "@angular/platform-browser-dynamic": "~10.1.4",
     "@angular/router": "~10.1.4",
     "@aposin/ng-aquila": "^10.3.0",
-    "@fortawesome/fontawesome-free": "^5.15.1",
     "css-vars-ponyfill": "^2.1.2",
     "css.gg": "^2.0.0",
     "iban": "^0.0.12",
