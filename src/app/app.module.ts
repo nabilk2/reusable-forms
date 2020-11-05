@@ -10,6 +10,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ShippingAddressComponent } from './shared/forms/shipping-address/shipping-address.component';
 import { HomeComponent } from './home/home.component';
 import { NxModule } from './nx/nx.module';
+import { AgeComponent } from './shared/forms/age/age.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { NxModule } from './nx/nx.module';
     ShoppingCartComponent,
     PersonalInfoComponent,
     ShippingAddressComponent,
-    HomeComponent
+    HomeComponent,
+    AgeComponent
   ],
   imports: [
     BrowserModule,

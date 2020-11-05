@@ -2,6 +2,11 @@
     <h3 class="container__header">Personal Info</h3>
     <form class="container__form" [formGroup]="userForm">
         <app-personal-info class="container__form-personal-info"></app-personal-info>
+        <app-age class="container__form-age">
+            <nx-error class="container__form-age--error" *ngIf="userForm.get('age').hasError('min')" nxFormfieldError>
+                You must be 18 to order.
+            </nx-error>
+        </app-age>
         <button type="submit" nxButton="cta" class="container__form-btn">Save</button>
     </form>
 </div>

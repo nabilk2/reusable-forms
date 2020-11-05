@@ -14,11 +14,13 @@ export class ProfileComponent implements OnInit {
     this.userForm = this._fb.group({
       firstName: 'Nabil',
       lastName: 'Khan',
-      email: ['', Validators.email]
+      email: ['', Validators.email],
+      age: ['', [Validators.min(18), Validators.required]]
     })
   }
 
   ngOnInit(): void {
+    this.userForm.get('age').statusChanges.subscribe(console.log);
   }
 
 }
